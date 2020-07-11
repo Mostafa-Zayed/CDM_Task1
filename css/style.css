@@ -1,0 +1,311 @@
+/* Start Main Rulze */
+body,h1,h2,h3,h4,h5,h6,p,ul {
+	font-family:Roboto;
+	padding:0px;
+	margin:0px;
+}
+*{
+  box-sizing: border-box;
+}
+.clearfix{
+	clear:both;
+}
+body {
+	background-color:#101010;
+}
+.container {
+	width:1000px;
+	margin:auto;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style: none;
+}
+button,input[type=submit]{
+	padding:15px 35px;
+	text-align:center;
+	background-color:#101010;
+	border:2px solid white;
+	color:white;
+	text-transform:capitalize;
+	font-weight:bold;
+	display:inline-block;
+	margin-top:10px;
+	cursor: pointer;
+}
+div.header div.logo, div.contact div.section div.title,div.header div.navbar ul li,div.slider ul li,div.services div.item,div.image,div.recent,div.contact div.section{
+	float:left;
+}
+/* End Main Rulze */
+
+/* Start Header */
+div.header {
+	margin-top:40px;
+	background-color:#202020;
+	border-left:5px solid #d54ab6;
+	position:relative;
+	bottom:-25px;
+	z-index:2;
+	overflow:hidden;	
+}
+
+div.header div.logo, div.contact div.section div.title{
+
+	padding:13px 20px;
+}
+div.header div.logo h3 , div.contact div.section div.title h3{
+	text-transform:uppercase;	
+	color:white;
+	font-weight:400;
+	font-size:30px;
+	letter-spacing:.2px;
+}
+div.header div.logo h3:before , div.contact div.section div.title h3:before{
+	content:'';
+	padding:13px;
+	display:inline-block;
+	background-color:#d54ab6;
+	border-radius:50%;
+}
+div.header div.navbar{
+   float:right;
+	text-transform:uppercase;
+}
+div.header div.navbar ul li{
+
+	padding: 24px;
+}
+div.header div.navbar ul li:hover{
+	background-color:#333333;
+}
+div.header div.navbar ul li a{
+	color:#ebe8eb;
+	font-weight:300;
+}
+/* End Header */
+
+/* Start Slider */
+div.slider{
+	margin:auto;
+	height:500px;
+	overflow:hidden;
+}
+div.slider ul{
+	width:5760px;
+	position:relative;
+	animation-name:slide;
+	animation-duration:50s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:infinite;
+	animation-delay:5s;
+}
+div.slider ul li{
+
+	position: relative;
+}
+div.slider h1{
+	padding: 20px;
+	text-align: justify;
+	position: absolute;
+	bottom: 200px;
+	left: 200px;
+	color:white;
+	margin:auto;
+}
+@-webkit-keyframes slide{
+	0%{ left:0px; }
+	25%{ left: -1920px;}
+	50%{ left: -3840px; }
+	57%{ left: -1920px; }
+	100%{ left: 0px;}
+}
+@-moz-keyframes slide{
+	0%{ left:0px; }
+	25%{ left: -1920px;}
+	50%{ left: -3840px; }
+	57%{ left: -1920px; }
+	100%{ left: 0px;}
+}
+@-o-keyframes slide {
+	0%{ left:0px; }
+	25%{ left: -1920px;}
+	50%{ left: -3840px; }
+	57%{ left: -1920px; }
+	100%{ left: 0px;}
+}
+@-ms-keyframes slide {
+	0%{ left:0px; }
+	25%{ left: -1920px;}
+	50%{ left: -3840px; }
+	57%{ left: -1920px; }
+	100%{ left: 0px;}
+}
+/* End  Slider */
+
+/* Start Services */
+div.services{
+	overflow:hidden;
+	color:white;
+	position:relative;
+	top:-30px;
+	margin-bottom:50px;
+}
+div.services div.item1{
+	background-color:#c14000;
+}
+div.services div.item2{
+	background-color:#009988;
+	margin:0px 3.5%;
+}
+div.services div.item3{
+	background-color:#ffa500;
+}
+div.services div.title{
+	width:100px;
+	height:100px;
+	border:3px solid white;
+	margin:10px auto;
+	border-radius:50px;
+	line-height:100px;
+}
+div.services div.item{
+	width:31%;
+	padding:30px;
+	text-align:center;
+}
+div.services div.content h1{
+	font-size:30px;
+	margin:15px 0px;
+}
+div.services p{
+	text-align:center;
+	padding:2px;
+	font-size:15px;
+	font-weight: 400;
+}
+/* End Services */
+
+/* Start Startup */
+div.image{
+	width:50%;
+	height:333px;
+	background-image:url('../images/person.png');
+}
+div.business , div.contact{
+	background-color: #191919;
+	overflow: hidden;
+}
+div.business{
+	width:50%;
+	height:333px;
+	float:right;
+	padding:25px;
+}
+div.business h1{
+	text-transform:capitalize;
+	color:white;
+}
+div.business p,div.title p{
+	color:#808080;
+	margin-bottom:15px;
+}
+div.business button {
+	text-transform:uppercase;
+
+}
+/* End Startup */
+
+/* Start Projects */
+div.projects{
+	margin:60px 0px;
+	text-align: center;
+}
+div.projects h1{
+	text-transform: capitalize;
+	color:white;
+}
+div.projects p{
+	width:55%;
+	margin:30px auto;
+	color:#808080;
+}
+div.projects button{
+	padding:15px 25px;
+	margin-top:25px;
+}
+div.project{
+	width:33.333%;
+	float: left;
+}
+div.recents{
+	overflow: hidden;
+}
+div.recent{
+	width:25%;
+
+}
+/* End Projects */
+
+/* Start Contact */
+div.contact{
+	padding:45px 0px;
+}
+div.contact div.section{
+
+	paddign:0px 10px;
+}
+div.contact div.section h2{
+	text-transform: capitalize;
+	color:white;
+	margin-bottom: 20px;
+}
+div.contact div.section p{
+	padding:0px 10px;
+	font-size:15px;
+	text-transform: capitalize;
+}
+div .content div.section div.title h3{
+	color:white;
+}
+div.contact div.section1{
+	width:40%;
+}
+div.contact div.section2{
+	width:25%;
+}
+div.contact div.section3{width:35%;}
+div.contact div.section div.title p ,div.contact div.section div.logo p{
+	padding:0px 10px;
+	font-size:15px;
+}
+input[type=text]{
+	background-color:#191919;
+	outline: 0px;
+	border:1px solid white;
+	padding:10px;
+	display: inline-block;
+	width:100%;
+	color:white;
+}
+input[type=submit]{
+	padding:10px 20px;
+}
+/* End Contact */
+/* Start Footer */
+div.footer{
+	text-align: center;
+	color:white;
+	margin:20px 0px;
+}
+div.footer hr{
+	background-color:#808080;
+	height: 0.5px;
+	margin:20px 0px;
+}
+div.footer h1{
+	font-size: 17px;
+	font-weight: lighter;
+}
+/* End Footer */
